@@ -1,0 +1,56 @@
+.a-gs {
+    text-decoration: none;
+    color: var(--dark);
+
+}
+
+.get-started {
+    height: 70vh;
+    background: var(--main);
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.left-gs {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right-gs{
+    display: flex;
+    
+   
+    align-items: center;
+    margin: 0 auto;
+}
+
+#img1 {
+    margin: 0 auto;
+    width: 35rem;
+    
+
+}
+
+@media screen and (max-width: 1165px)  {
+    .get-started {
+       flex-direction: column;
+       text-align: center;
+       padding: 10px;
+       height: fit-content;
+}
+
+#img1 {
+   width: 50%;
+   height: 50%;
+}
+
+.left-gs {
+    margin-top: 50px;
+}
+}

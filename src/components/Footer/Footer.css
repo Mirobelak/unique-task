@@ -1,0 +1,50 @@
+.footer-container {
+    background: var(--main);
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    width: 25%;
+    padding: 20px;
+ 
+}
+
+.first a {
+text-decoration: none;
+display: block;
+color: white;
+}
+
+.first a:hover{
+    transform: scale(0.9);
+}
+
+.first img {
+    width: 10%;
+    margin: 0 10px;
+    flex-direction: row;
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+@media  screen and (max-width: 625px)  {
+    .footer-container {
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+    .first {
+        width: 40%;
+     
+    }
+}

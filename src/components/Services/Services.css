@@ -1,0 +1,63 @@
+.skill {
+    padding: 0 0 50px 0;
+    position: relative;
+  }
+  .skill-bx {
+    background: #ffffff;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px;
+    margin-top: 50px auto;
+  }
+  .skill h1 {
+      width: fit-content;
+      height: fit-content;
+      text-align: center;
+  }
+  .skill p {
+      color: var(--dark);
+      letter-spacing: 0.8px;
+      line-height: 1.5rem;
+      margin: 30px auto
+  }
+  .skill-slider {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+
+  }
+  .skill-slider .item img {
+    width: 20%;
+    height: 20%;
+  }
+
+  .item h2, p {
+    height: fit-content;
+  }
+
+  .btn1 {
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .arrow1 {
+   padding-top: 15px;
+   width: 10px;
+   height: 10px;
+   margin: 0 auto 15px auto;
+}
+  
+
+  

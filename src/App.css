@@ -1,6 +1,11 @@
 :root {
   --main: linear-gradient(90.15deg, #ffffff -0.76%, #8cc63f -0.76%, #8cc63f 39.67%, #8cc63f 99.92%);
+  --main2: #8cc63f;
   --dark: #0C2533;
+}
+*{
+  box-sizing: border-box;
+ 
 }
 
 .App {
@@ -12,6 +17,8 @@
   overflow: hidden;
   overflow-x: hidden;
   position: relative;
+  max-width: 1920px;
+  max-height: 1010;
 }
 ::-webkit-scrollbar{
   display: none;
@@ -43,20 +50,14 @@ transform: scale(1.1);
     padding-left: 20px;
 }
 
-h1{
-font-family: nunito-sans,sans-serif;
-font-weight: 700;
-font-style: normal;
+h1 {
+  font-family: nunito-sans,sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 p{
-  font-family: nunito-sans,sans-serif;
-font-weight: 400;
-font-style: normal;
-}
-
-h2 {
 font-family: nunito-sans,sans-serif;
-font-weight: 600;
+font-weight: 400;
 font-style: normal;
 }

@@ -3,11 +3,10 @@ import axios from 'axios';
 import "./Services.css"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import LogoUnique from "../../assets/logoUniq.png"
 
 const Program = () => {
- 
   const [posts, setPosts] = useState([])
-
   useEffect(() => {
       fetchData()
   },[] )
@@ -34,60 +33,65 @@ const Program = () => {
 
   return (
 <>
-    { Object.values(posts).map((post, i) => {
+<div className="service-head">
+                <h2 className='h2-head'>Services</h2>
+                <p className="tst-p"> Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry</p>
+                <div className="tst-image"> <img src={LogoUnique} alt="" /></div>
+  </div>
+{ Object.values(posts).map((post, i) => {
       return (
-        <section className="skill" id="services">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Services</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br></br> Vitae deserunt facere architecto itaque</p>
-                        <Carousel responsive={responsive} infinite={true} autoPlay={true}
-  autoPlaySpeed={2000} className="skill-slider">
-                         
-                            <div key={i} className="item">
-                                <img id="#img" src={post[1].image}alt="mage" />
+                    <section className="service" id="services">
+                    <div className="skill-bx">
+                    <Carousel responsive={responsive} infinite={true} autoPlay={true}
+                        autoPlaySpeed={5000} className="skill-slider">
+            
+                                <div key={i} className="item">
+                                <img id="img" src={post[1].image}alt="mage" />
                                 <h2>{post[1].title}</h2>
                                 <p>{post[1].content}</p>
                                 <button className=' btn1 btn' href="#">More <img class="arrow arrow1" src="https://cdn.animaapp.com/projects/62fa4955b11cd084da5d767b/releases/62fa497667652f8983ee8d01/img/download@1x.png"></img></button>
                              </div>
                             <div key={i} className="item">
-                                <img id="#img"src={post[2].image} alt="Image" />
+                                <img id="img"src={post[2].image} alt="Image" />
                                 <h2>{post[2].title}</h2>
                                 <p>{post[2].content}</p>
                                 <button className=' btn1 btn' href="#">More <img class="arrow arrow1" src="https://cdn.animaapp.com/projects/62fa4955b11cd084da5d767b/releases/62fa497667652f8983ee8d01/img/download@1x.png"></img></button>
                              </div>
                             <div key={i} className="item">
-                                <img id="#img" src={post[0].image} alt="Image" />
+                                <img id="img" src={post[0].image} alt="Image" />
                                 <h2>{post[0].title}</h2>
                                 <p>{post[0].content}</p>
                                 <button className=' btn1 btn' href="#">More <img class="arrow arrow1" src="https://cdn.animaapp.com/projects/62fa4955b11cd084da5d767b/releases/62fa497667652f8983ee8d01/img/download@1x.png"></img></button>
                              </div>
                             <div className="item">
-                                <img id="#img" src={post[3].image}alt="Image" />
+                                <img id="img" src={post[3].image}alt="Image" />
                                 <h2>{post[3].title}</h2>
                                 <p>{post[3].content}</p>
                                 <button className=' btn1 btn' href="#">More <img class="arrow arrow1" src="https://cdn.animaapp.com/projects/62fa4955b11cd084da5d767b/releases/62fa497667652f8983ee8d01/img/download@1x.png"></img></button>
                              </div>
                             <div  key={i} className="item">
-                                <img id="#img" src={post[4].image}alt="Image" />
+                                <img id="img" src={post[4].image}alt="Image" />
                                 <h2>{post[4].title}</h2>
                                 <p>{post[4].content}</p>
                                 <button className=' btn1 btn' href="#">More <img class="arrow arrow1" src="https://cdn.animaapp.com/projects/62fa4955b11cd084da5d767b/releases/62fa497667652f8983ee8d01/img/download@1x.png"></img></button>
                              </div>
-                            <div key={i} className="item">
-                                <img id="#img" src={post[5].image}alt="Image" />
+                              <div key={i} className="item">
+                                <img id="img" src={post[5].image}alt="Image" />
                                 <h2>{post[5].title}</h2>
                                 <p>{post[5].content}</p>
                                 <button className=' btn1 btn' href="#">More <img class="arrow arrow1" src="https://cdn.animaapp.com/projects/62fa4955b11cd084da5d767b/releases/62fa497667652f8983ee8d01/img/download@1x.png"></img></button>
+                        
+                               
                              </div>
                         </Carousel>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>)})}
+               
+        
+        
+    </section>
+   
+    
+    )})}
     </>)}
     
     

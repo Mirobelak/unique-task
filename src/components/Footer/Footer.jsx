@@ -1,15 +1,17 @@
 import React from 'react'
 import "./Footer.css"
-import Github from "../../assets/github.png"
-import Instagram from "../../assets/instagram.png"
-import LinkedIn from "../../assets/linkedin.png"
+import Facebook from "../../assets/facebook.png"
+import Twitter from "../../assets/linkedin.png"
+import LinkedIn from "../../assets/twitter.com.png"
 
 const Footer = () => {
   return (
+   <div className="foot-container">
     <div className="footer-container">
       <div className="first">
         <h1>Logo.co</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, alias autem facere harum ut, magnam </p>
+        <p>Adress: 135 Barnard St. Brooklyn, NY 10036, United States Phone: 1-400-123-1234 Email: 
+          example@creativelab.com </p>
       </div>
       <div className="first">
         <h1>Services</h1>
@@ -27,12 +29,18 @@ const Footer = () => {
         <a href='#' >Portfolio</a>
         <a href='#' >Sign in</a>
       </div>
-      <div className="first">
+      <div className="first last">
         <h1>Get in touch</h1>
-        <img src={Github} alt="" />
-        <img src={Instagram} alt="" />
-        <img src={LinkedIn} alt="" />
+        <div className='logos'>
+        <img className='logo' src={Facebook} alt="" />
+        <img className='logo' src={LinkedIn} alt="" />
+        <img className='logo' src={Twitter} alt="" />
+        </div>
       </div>
+    </div>
+    <div className="copyright">
+      <p>© Copyright 2020 Creative . X Design by Sumon</p>
+    </div>
     </div>
   )
 }
